@@ -1,6 +1,10 @@
 import api from './apiService';
 
 class User {
+  static signUp(user) {
+    return api.post('/users', user);
+  }
+
   static login(user) {
     return api.post('/users/sign_in', user);
   }

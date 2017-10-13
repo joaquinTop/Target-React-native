@@ -12,13 +12,13 @@ const LoginForm = ({ handleSubmit }) => (
   <View style={styles.container} onSubmit={handleSubmit}>
     <Field
       name="email"
-      label="Email"
+      label="EMAIL"
       keyboardType="email-address"
       component={Input}
     />
     <Field
       name="password"
-      label="Password"
+      label="PASSWORD"
       component={Input}
       password
     />

@@ -17,29 +17,16 @@ const styles = StyleSheet.create({
     marginBottom: 0
   },
   input: {
-    width: 160,
-    height: 30,
-    backgroundColor: white,
-    marginBottom: 6,
-    marginTop: 2,
     paddingHorizontal: 15,
     fontSize: 12,
     fontFamily: secondaryFont,
-    color: textColor,
-    borderWidth: 1,
-    borderColor: black
-  },
-  activeInput: {
-    backgroundColor: white,
-    borderWidth: 1,
-    borderColor: black
+    color: textColor
   },
   inputError: {
     backgroundColor: white,
     borderWidth: 2,
     borderColor: errorColor,
     flexDirection: 'column',
-    fontSize: 9,
     marginBottom: 2
   },
   error: {
@@ -47,6 +34,19 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 10,
     fontFamily: secondaryFont
+  },
+  picker: {
+    width: 160,
+    height: 30,
+    marginBottom: 6,
+    marginTop: 2,
+    paddingHorizontal: 15,
+    borderWidth: 1,
+    borderColor: black
+  },
+  modal: {
+    borderWidth: 0,
+    borderColor: white
   }
 });
 
