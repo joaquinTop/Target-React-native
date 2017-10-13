@@ -1,10 +1,13 @@
 import React from 'react';
 import { object } from 'prop-types';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+
+import MapComponent from '../../components/map';
+import styles from './styles';
 
 const HomeScreen = () => (
-  <View>
-    <Text>Home Screen</Text>
+  <View style={styles.container}>
+    <MapComponent />
   </View>
 );
 
