@@ -40,7 +40,7 @@ class App {
     if (authenticated) {
       Navigation.startSingleScreenApp({
         screen: {
-          screen: 'example.HomeScreen',
+          screen: 'target.HomeScreen',
           title: 'Home',
           navigatorStyle: {},
           leftButtons: [{
@@ -49,14 +49,14 @@ class App {
         },
         drawer: {
           left: {
-            screen: 'example.Drawer'
+            screen: 'target.Drawer'
           }
         }
       });
     } else {
       Navigation.startSingleScreenApp({
         screen: {
-          screen: 'example.LoginScreen',
+          screen: 'target.LoginScreen',
           title: 'Login',
           navigatorStyle: {}
         }

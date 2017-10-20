@@ -5,9 +5,9 @@ import LoginScreen from '../containers/LoginScreen';
 import Drawer from '../components/common/Drawer';
 
 const registerScreens = (store, Provider) => {
-  Navigation.registerComponent('example.HomeScreen', () => HomeScreen, store, Provider);
-  Navigation.registerComponent('example.LoginScreen', () => LoginScreen, store, Provider);
-  Navigation.registerComponent('example.Drawer', () => Drawer, store, Provider);
+  Navigation.registerComponent('target.HomeScreen', () => HomeScreen, store, Provider);
+  Navigation.registerComponent('target.LoginScreen', () => LoginScreen, store, Provider);
+  Navigation.registerComponent('target.Drawer', () => Drawer, store, Provider);
 };
 
 export default registerScreens;
