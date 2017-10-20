@@ -64,4 +64,3 @@ export const logout = () =>
       throw (err);
     });
   };
-  

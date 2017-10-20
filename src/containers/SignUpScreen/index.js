@@ -26,7 +26,7 @@ class SignUpScreen extends Component {
 
     return (
       <View style={styles.container}>
-       <Image
+        <Image
           style={styles.image}
           source={require('../../assets/login-top.png')}
         />
@@ -35,15 +35,18 @@ class SignUpScreen extends Component {
         </Text>
         <SignUpForm onSubmit={user => signUp(user.toJS())} />
         <View style={styles.line} />
-        <Text style={styles.signInLink} onPress={() => { 
-          Navigation.startSingleScreenApp({
-            screen: {
-              screen: 'target.LoginScreen',
-              title: 'Login',
-              navigatorStyle: {}
-            }
-          });
-        }}>
+        <Text
+          style={styles.signInLink}
+          onPress={() => {
+            Navigation.startSingleScreenApp({
+              screen: {
+                screen: 'target.LoginScreen',
+                title: 'Login',
+                navigatorStyle: {}
+              }
+            });
+          }}
+        >
           SIGN IN
         </Text>
       </View>

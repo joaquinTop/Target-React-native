@@ -41,7 +41,9 @@ class LoginScreen extends Component {
           CONNECT WITH FACEBOOK
         </Text>
         <View style={styles.line} />
-        <Text style={styles.signUpLink} onPress={() => { 
+        <Text
+        style={styles.signUpLink}
+        onPress={() => {
           Navigation.startSingleScreenApp({
             screen: {
               screen: 'target.SignUpScreen',
@@ -49,7 +51,8 @@ class LoginScreen extends Component {
               navigatorStyle: {}
             }
           });
-        }}>
+        }}
+        >
           SIGN UP
         </Text>
       </View>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { func } from 'prop-types';
-import { Field, reduxForm} from 'redux-form/immutable';
-import { View, Picker } from 'react-native';
+import { Field, reduxForm } from 'redux-form/immutable';
+import { View } from 'react-native';
 
 import Input from '../../common/Input';
 import MyPicker from '../../common/MyPicker';
@@ -41,7 +41,7 @@ const SignUpForm = ({ handleSubmit }) => (
       data={genderOptions}
       component={MyPicker}
     />
-    <Button title="SIGN UP" onPress={handleSubmit} styleProps={buttonStyle}/>
+    <Button title="SIGN UP" onPress={handleSubmit} styleProps={buttonStyle} />
   </View>
 );
 

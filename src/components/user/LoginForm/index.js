@@ -22,7 +22,7 @@ const LoginForm = ({ handleSubmit }) => (
       component={Input}
       password
     />
-    <Button title="SIGN IN" onPress={handleSubmit} styleProps={buttonStyle}/>
+    <Button title="SIGN IN" onPress={handleSubmit} styleProps={buttonStyle} />
   </View>
 );
 
