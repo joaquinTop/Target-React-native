@@ -29,6 +29,8 @@ export const rosyPinkShadow = '#af5c66';
 export const apricot = '#fbaf63';
 export const paleLilac = '#e0e0ff';
 export const mercury = '#e3e3e3';
+export const grey = '#666666';
+export const whiteyGrey = '#eeeeee';
 
 // theme
 export const brandColor = black;
@@ -43,6 +45,8 @@ export const sosShadowColor = rosyPinkShadow;
 export const tabIconColor = coolGrey;
 export const selectBackgroundColor = whiteTwo;
 export const hairlineColor = superLightGrey;
+export const loadingIndicatorColor = grey;
+export const loadingBackgroundColor = whiteyGrey;
 
 // fonts
 export const primaryFont = 'OpenSans-Regular';

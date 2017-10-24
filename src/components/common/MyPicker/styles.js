@@ -4,7 +4,6 @@ import {
   white,
   black,
   textColor,
-  strongGrey,
   errorColor,
   secondaryFont
 } from '../../../constants/styleConstants';
