@@ -16,12 +16,12 @@ const styles = StyleSheet.create({
     backgroundColor: whiteBackground
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 16,
     textAlign: 'center',
     fontFamily: primaryBoldFont,
     backgroundColor: transparent,
     marginBottom: 30,
-    marginTop: 110,
+    marginTop: 30,
     margin: 10
   },
   forgotLink: {
@@ -43,9 +43,9 @@ const styles = StyleSheet.create({
     backgroundColor: textColor,
     width: 121,
     height: 0.5,
-    marginTop: 60
+    marginTop: 30
   },
-  signUpLink: {
+  signInLink: {
     color: textColor,
     fontSize: 11,
     fontFamily: secondaryFont,

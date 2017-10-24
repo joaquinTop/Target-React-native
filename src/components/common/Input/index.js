@@ -31,7 +31,7 @@ class Input extends Component {
 
     return (
       <View>
-        {label && <Text style = {styles.label} >{label}</Text>}
+        {label && <Text style={styles.label} >{label}</Text>}
         <View>
           <TextInput
             onChangeText={text => onChange(text.trim())}

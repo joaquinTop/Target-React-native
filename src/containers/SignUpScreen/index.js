@@ -5,20 +5,20 @@ import { connect } from 'react-redux';
 import { destroy } from 'redux-form/immutable';
 import { Navigation } from 'react-native-navigation';
 
-import LoginForm from '../../components/user/LoginForm';
+import SignUpForm from '../../components/user/SignUpForm';
 import Loading from '../../components/common/Loading';
 import styles from './styles';
-import { login } from '../../actions/userActions';
+import { signUp } from '../../actions/userActions';
 import { defaultNavigatorStyle } from '../../constants/styleConstants';
 
-class LoginScreen extends Component {
+class SignUpScreen extends Component {
   componentWillUnmount() {
     const { destroyForm } = this.props;
     destroyForm();
   }
 
   render() {
-    const { login, loading, authenticated } = this.props;
+    const { signUp, loading, authenticated } = this.props;
 
     if (loading || authenticated) {
       return <Loading />;
@@ -33,41 +33,35 @@ class LoginScreen extends Component {
         <Text style={styles.welcome}>
           TARGET MVD
         </Text>
-        <LoginForm onSubmit={user => login(user.toJS())} />
-        <Text style={styles.forgotLink}>
-          Forgot your password?
-        </Text>
-        <Text style={styles.connectWithFb}>
-          CONNECT WITH FACEBOOK
-        </Text>
+        <SignUpForm onSubmit={user => signUp(user.toJS())} />
         <View style={styles.line} />
         <Text
-        style={styles.signUpLink}
-        onPress={() => {
-          Navigation.startSingleScreenApp({
-            screen: {
-              screen: 'target.SignUpScreen',
-              title: 'SignUp',
-              navigatorStyle: {}
-            }
-          });
-        }}
+          style={styles.signInLink}
+          onPress={() => {
+            Navigation.startSingleScreenApp({
+              screen: {
+                screen: 'target.LoginScreen',
+                title: 'Login',
+                navigatorStyle: {}
+              }
+            });
+          }}
         >
-          SIGN UP
+          SIGN IN
         </Text>
       </View>
     );
   }
 }
 
-LoginScreen.propTypes = {
-  login: func.isRequired,
+SignUpScreen.propTypes = {
+  signUp: func.isRequired,
   authenticated: bool.isRequired,
   loading: bool.isRequired,
   destroyForm: func.isRequired
 };
 
-LoginScreen.navigatorStyle = defaultNavigatorStyle;
+SignUpScreen.navigatorStyle = defaultNavigatorStyle;
 
 const mapState = state => ({
   authenticated: state.getIn(['session', 'authenticated']),
@@ -75,8 +69,8 @@ const mapState = state => ({
 });
 
 const mapDispatch = dispatch => ({
-  login: user => dispatch(login(user)),
-  destroyForm: () => dispatch(destroy('login'))
+  signUp: user => dispatch(signUp(user)),
+  destroyForm: () => dispatch(destroy('signUp'))
 });
 
-export default connect(mapState, mapDispatch)(LoginScreen);
+export default connect(mapState, mapDispatch)(SignUpScreen);

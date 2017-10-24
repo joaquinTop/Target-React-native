@@ -2,7 +2,7 @@
 export const transparent = '#00000000';
 export const white = '#fff';
 export const black = '#000';
-export const red = '#eb2a2a'
+export const red = '#eb2a2a';
 export const whiteTwo = '#e4e4e4';
 export const whiteTree = '#d8d8d8';
 export const orange = '#fc9f43';
@@ -49,9 +49,7 @@ export const primaryFont = 'OpenSans-Regular';
 export const primaryBoldFont = 'OpenSans-Bold';
 export const secondaryFont = 'OpenSans-Semibold';
 
-
 // navigator
 export const defaultNavigatorStyle = {
-    navBarHidden: true
-  };
-  
+  navBarHidden: true
+};
