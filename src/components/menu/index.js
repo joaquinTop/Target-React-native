@@ -3,6 +3,7 @@ import { array, func } from 'prop-types';
 import { View, Text, FlatList, TouchableHighlight, Image } from 'react-native';
 
 import styles from './styles';
+import { coolGrey } from '../../constants/styleConstants';
 
 class Menu extends Component {
   constructor() {
@@ -31,7 +32,7 @@ class Menu extends Component {
           data={optionsList}
           renderItem={({ item }) =>
             <TouchableHighlight
-              underlayColor={'coolGrey'}
+              underlayColor={coolGrey}
               onPress={() => this.selectItem(item)}
               style={styles.option}
             >
